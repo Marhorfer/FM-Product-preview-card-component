@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;700&family=Montserrat:wght@200;300;400;500&display=swap');
+html,body{
+    margin:0;
+    font-family:Montserrat, sans-serif;
+    --dark-cyan: hsl(158, 36%,37%);
+    --dark-grayish-blue: hsl(228,12%,48%);
+    --very-dark-blue: hsl(212,21%,14%)
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2ebe3;
+}
+
+main{
+    background-color:#ffffff;
+}
+
+.container{
+    display: flex;
+    border-radius: .625rem;
+    width: 37.5rem;
+}
+
+.image{
+    width: 50%;
+    background-image: url(images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: .625rem 0 0 .625rem;
+}
+
+.content{
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+    color: hsl(228,12%,48%);
+    font-size: .875rem;
+}
+
+.first-text{
+    font-weight: 500;
+    font-size: .9rem;
+    letter-spacing: 0.3rem;
+    margin: 0;
+    
+}
+
+.first-text p{
+    margin-top: 0;
+}
+
+.second-text{
+    font-family: 'Fraunces', serif;
+    color: hsl(212,21%,14%);
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 2.3rem;
+}
+
+.second-text h1{
+    margin-bottom: 0;
+}
+
+.description{
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+}
+
+.current-price{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.price p{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 1.19rem;
+    text-decoration-line: line-through;
+}
+
+.btn{
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: #ffffff;
+    border-radius: .5rem;
+    border: transparent;
+    height: 3rem;
+}
+
+.btn img{
+    width: 1rem;
+    height: 1rem;
+    padding-top: .25rem;
+    padding-right: .40rem;
+}
+
+.btn span{
+    font-weight: 700;
+    font-size: .875rem;
+}
+
+.attribution { position: absolute; font-size: 11px; text-align: center; bottom: .875rem; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 600px) {
+    body{
+        align-items: flex-start;
+    }
+    .container{
+        flex-direction: column;
+        margin: 1.5rem 1rem;
+        align-items: flex-start;
+        height: auto;
+        max-width: 38.18rem;
+    }
+    .image{
+        background-image: url(images/image-product-mobile.jpg);
+        width: 100%;
+        height: 15rem;
+        border-radius: .625rem .625rem 0 0;
+    }
+    .content{
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .second-text h1{
+        font-size: 2rem;
+        margin-top: .75rem;
+    }
+    .price{
+        width: 370px;
+        height: 32px
+    }
+    .price h2{
+        margin: 0;
+    }
+    .btn{
+        margin-top: 25px;
+    }
+    
+
+}
